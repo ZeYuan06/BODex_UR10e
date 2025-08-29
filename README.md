@@ -28,7 +28,8 @@ Looking for more diverse and higher-quality dexterous grasps? Check out [Dexonom
 conda create -n bodex python=3.10
 conda activate bodex
 
-conda install pytorch==2.2.2 pytorch-cuda=12.1 -c pytorch -c nvidia 
+~~ conda install pytorch==2.2.2 pytorch-cuda=12.1 -c pytorch -c nvidia ~~
+pip install torch==2.2.2+cu121 torchvision==0.17.2+cu121 torchaudio==2.2.2+cu121 -f https://download.pytorch.org/whl/torch_stable.html
 
 pip install -e . --no-build-isolation  
 
